@@ -5,7 +5,7 @@ Modify starter code to create an application that enables employees to generate 
 Run in the browser and feature dynamically updated HTML and CSS powered by JavaScript code that I write. 
 Have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
-Password can include special characters. 
+Password can include special characters. Examples of password special characters: https://www.owasp.org/index.php/Password_special_characters
 
 Create a Web Portfolio that can be added to as Projects are Completed
 Ensure Webpage is Functioning as Intended (ie: all links work, etc)
