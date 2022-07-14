@@ -1,11 +1,11 @@
 // Assignment Code
 
 var generateBtn = document.querySelector("#generate");
-var lowercaseBtn = document.querySelector("#lowercase");
-var uppercaseBtn = document.querySelector("#uppercase");
-var numericBtn = document.querySelector("#numeric");
-var specialBtn = document.querySelector("#special");
-var criteriaBtn = document.querySelector("#criteriaBtn");
+var lowercaseBtn = document.getElementById("#lowercase");
+var uppercaseBtn = document.getElementById("#uppercase");
+var numericBtn = document.getElementById("#numeric");
+var specialBtn = document.getElementById("#special");
+var criteriaBtn = document.getElementById("#criteriaBtn");
 
 
 // Write password to the #password input
@@ -56,10 +56,10 @@ function changeCriteriaClass(whichCriteriaBtn) {
 
 generateBtn.addEventListener("click", writePassword);
 
-lowercaseBtn.addEventListener("click", changeCriteriaClass("#lowercaseBtn") { alert("Hello World!"); });
+lowercaseBtn.addEventListener("click", changeCriteriaClass("lowercaseBtn"));
 
-uppercaseBtn.addEventListener("click", changeCriteriaClass("#uppercaseBtn"));
+uppercaseBtn.addEventListener("click", changeCriteriaClass("uppercaseBtn"));
 
-numericBtn.addEventListener("click", changeCriteriaClass("#numericBtn"));
+numericBtn.addEventListener("click", changeCriteriaClass("numericBtn"));
 
-specialBtn.addEventListener("click", changeCriteriaClass("#specialBtn"));
+specialBtn.addEventListener("click", changeCriteriaClass("specialBtn"));
