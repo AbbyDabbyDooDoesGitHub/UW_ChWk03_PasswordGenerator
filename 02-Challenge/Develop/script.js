@@ -1,7 +1,4 @@
 // Assignment Code
-var jQueryScript = document.createElement('script');
-jQueryScript.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
-document.head.appendChild(jQueryScript);
 
 var generateBtn = document.querySelector("#generate");
 var lowercaseBtn = document.querySelector("#lowercase");
@@ -9,6 +6,7 @@ var uppercaseBtn = document.querySelector("#uppercase");
 var numericBtn = document.querySelector("#numeric");
 var specialBtn = document.querySelector("#special");
 var criteriaBtn = document.querySelector("#criteriaBtn");
+
 
 // Write password to the #password input
 function writePassword() {
@@ -36,32 +34,32 @@ function writePassword() {
 
 // Write password to the #password input
 function changeCriteriaClass(whichCriteriaBtn) {
-  var changeBtn = whichCriteriaBtn;
   var className = document.getElementById(whichCriteriaBtn).className;
 
-  if (className="include") {
+  if ( document.getElementById(whichCriteriaBtn).classList.contains("include") ) {
 
-    $('#element_id').removeClass('hidden').addClass('skip');
+    document.getElementById(whichCriteriaBtn).classList.remove("include");
 
-  } else if (className="skip") {
+    document.getElementById(whichCriteriaBtn).classList.add('skip');
 
-    $('#element_id').removeClass('skip').addClass('include');
+  } else if ( document.getElementById(whichCriteriaBtn).classList.contains("skip") ) {
+
+    document.getElementById(whichCriteriaBtn).classList.remove("skip");
+
+    document.getElementById(whichCriteriaBtn).classList.add('include');
 
   }
 
 }
 
-// Add event listener to generate button
+// EVENT LISTENERS
+
 generateBtn.addEventListener("click", writePassword);
 
-// Add event listener to lowercase button
-lowercaseBtn.addEventListener("click", changeCriteriaClass(lowercaseBtn));
+lowercaseBtn.addEventListener("click", changeCriteriaClass("#lowercaseBtn") { alert("Hello World!"); });
 
-// Add event listener to uppercase button
-uppercaseBtn.addEventListener("click", changeCriteriaClass(uppercaseBtn));
+uppercaseBtn.addEventListener("click", changeCriteriaClass("#uppercaseBtn"));
 
-// Add event listener to numeric button
-numericBtn.addEventListener("click", changeCriteriaClass(numericBtn));
+numericBtn.addEventListener("click", changeCriteriaClass("#numericBtn"));
 
-// Add event listener to special button
-specialBtn.addEventListener("click", changeCriteriaClass(specialBtn));
+specialBtn.addEventListener("click", changeCriteriaClass("#specialBtn"));
