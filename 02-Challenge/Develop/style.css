@@ -118,6 +118,45 @@ button[disabled] {
   overflow: hidden;
 }
 
+#passwordSettings {
+  /* display: none;  */  /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 135px;
+  float: center;
+  align-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+#passwordSettings ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 30%;
+}
+
+.criteriaBtn {
+  border: none;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 18px;
+  margin: 8px;
+  padding: 5px 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.include {
+  background-color: rgb(6, 185, 0);
+}
+
+.skip {
+  background-color: hsl(360, 91%, 36%);
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;

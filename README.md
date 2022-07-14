@@ -5,7 +5,7 @@ Modify starter code to create an application that enables employees to generate 
 Run in the browser and feature dynamically updated HTML and CSS powered by JavaScript code that I write. 
 Have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
-Password can include special characters. Examples of password special characters: https://www.owasp.org/index.php/Password_special_characters
+Password can include special characters. 
 
 Create a Web Portfolio that can be added to as Projects are Completed
 Ensure Webpage is Functioning as Intended (ie: all links work, etc)
@@ -40,11 +40,11 @@ THEN I am presented with a series of prompts for password criteria
 WHEN prompted for password criteria
 THEN I select which criteria to include in the password
 WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
+<!-- THEN I choose a length of at least 8 characters and no more than 128 characters -->
 WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+<!-- THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters -->
 WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
+<!-- THEN my input should be validated and at least one character type should be selected -->
 WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated

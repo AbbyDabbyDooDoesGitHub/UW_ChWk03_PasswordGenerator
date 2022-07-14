@@ -28,7 +28,35 @@
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
+
+      <div class="card" id="passwordSettings">
+        <div class="card-header">
+          <h2>Set Password Criteria</h2>
+          <h3>Please Select at Least One Category</h3>
+        </div>
+        <div class="card-body">
+
+          <ul>
+            <li><button id="lowercase" class="criteriaBtn include">INCLUDE</button> Lowercase Characters</li>
+
+            <li><button id="uppercase" class="criteriaBtn include">INCLUDE</button> Uppercase Characters</li>
+            
+            <li><button id="numeric" class="criteriaBtn include">INCLUDE</button> Numeric Characters</li>
+
+            <li><button id="special" class="criteriaBtn include">INCLUDE</button> Special Characters</li>
+
+          </ul>
+
+        </div>
+        <div class="card-footer">
+          <button id="setCriteria" class="btn">Set Criteria & Generate</button>
+        </div>
+      </div>
+
+
+
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
