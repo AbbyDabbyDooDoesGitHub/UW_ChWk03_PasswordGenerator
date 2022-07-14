@@ -118,23 +118,27 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* MODAL FOR PASSWORD SETTINGS */
 #passwordSettings {
   /* display: none;  */  /* Hidden by default */
-  position: fixed; /* Stay in place */
+  position: absolute;
+  left: 50%;
+  top: 350px;
   z-index: 1; /* Sit on top */
-  top: 135px;
-  float: center;
-  align-content: center;
+  transform: translate(-50%, -50%);
+
   width: 100%;
   text-align: center;
 }
 
+/* REMOVE BULLETS AND FORMAT LIST */
 #passwordSettings ul {
   list-style: none;
   text-align: left;
   padding-left: 30%;
 }
 
+/* FORMAT INCLUDE/SKIP BUTTONS */
 .criteriaBtn {
   border: none;
   border-radius: 25px;
@@ -149,12 +153,19 @@ button[disabled] {
   cursor: pointer;
 }
 
+/* INCLUDE COLOR CHANGE */
 .include {
   background-color: rgb(6, 185, 0);
 }
 
+/* SKIP COLOR CHANGE */
 .skip {
   background-color: hsl(360, 91%, 36%);
+}
+
+/* CHANGE CRITERIA BUTTON TO BLUE */
+#setCriteria {
+  background-color: rgb(8, 17, 153);
 }
 
 @media (max-width: 690px) {
