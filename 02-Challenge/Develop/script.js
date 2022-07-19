@@ -22,6 +22,10 @@ function passwordParameters() {
   } else if (charLength == null) {
     alert("User cancelled the prompt.");
     console.log("else if charLength is: " + charLength);
+  } else if (charLength < 8) {
+    alert("Minimum of 8 characters required to generate password. You requested " + charLength +".");
+  } else if (charLength > 128) {
+    alert("Maximum of 128 characters permitted to generate password. You requested " + charLength +".");;
   } else {
     console.log("else charLength is: " + charLength);
 
@@ -51,7 +55,7 @@ function passwordParameters() {
     if (chars == "" || chars == null) {
       alert("No characters were permitted. Please select at least one character type to generate a password.");
     } else {
-      document.getElementById("demo").innerHTML = text;
+      generatePassword((charLength-1),chars);
 
     }
 
@@ -59,78 +63,27 @@ function passwordParameters() {
 
 }
 
+// Generate Password
+function generatePassword(passwordLength,chars) {
+
+  var password = "";
+
+  for (var i = 0; i <= passwordLength; i++) {
+    var randomNumber = Math.floor(Math.random() * chars.length);
+    password += chars.substring(randomNumber, randomNumber +1);
+   }
+
+   console.log("password: " + password);
+   writePassword(password);
+}
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
+function writePassword(password) {
   var passwordText = document.querySelector("#password");
-
-
-  var passwordLength = 12;  //needs to be 8-128
-  var passwordOutput = "";  //to be actual password
-
-  let person = prompt("Please enter your name", "Harry Potter");
-  let text;
-  if (person == null || person == "") {
-    text = "User cancelled the prompt.";
-  } else {
-    text = "Hello " + person + "! How are you today?";
-  }
-
-  // THEN I confirm whether or not to include lowercase, uppercase
-  // THEN my input should be validated and at least one character type should be selected
-
-
-
 
   passwordText.value = password;
 
 }
 
-// Write password to the #password input
-// function changeCriteriaClass(whichCriteriaBtn) {
-//   var className = document.getElementById(whichCriteriaBtn).className;
-
-//   if ( document.getElementById(whichCriteriaBtn).classList.contains("include") ) {
-
-//     document.getElementById(whichCriteriaBtn).classList.remove("include");
-
-//     document.getElementById(whichCriteriaBtn).classList.add('skip');
-
-//   } else if ( document.getElementById(whichCriteriaBtn).classList.contains("skip") ) {
-
-//     document.getElementById(whichCriteriaBtn).classList.remove("skip");
-
-//     document.getElementById(whichCriteriaBtn).classList.add('include');
-
-//   }
-
-// }
 
 
-
-// lowercaseBtn.addEventListener("click", changeCriteriaClass("lowercaseBtn"));
-
-// document.getElementById("lowercaseBtn").addEventListener("click", function(){
-
-//   if ( document.getElementById("lowercaseBtn").classList.contains("include") ) {
-
-//     document.getElementById("lowercaseBtn").classList.remove("include");
-
-//     document.getElementById("lowercaseBtn").classList.add('skip');
-
-//   } else if ( document.getElementById("lowercaseBtn").classList.contains("skip") ) {
-
-//     document.getElementById("lowercaseBtn").classList.remove("skip");
-
-//     document.getElementById("lowercaseBtn").classList.add('include');
-
-//   }
-
-// });
-
-// uppercaseBtn.addEventListener("click", changeCriteriaClass("uppercaseBtn"));
-
-// numericBtn.addEventListener("click", changeCriteriaClass("numericBtn"));
-
-// specialBtn.addEventListener("click", changeCriteriaClass("specialBtn"));
