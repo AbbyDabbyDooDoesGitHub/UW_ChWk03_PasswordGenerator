@@ -10,7 +10,7 @@ Password can include special characters. Examples of password special characters
 Link to Web App: https://abbydabbydoodoesgithub.github.io/UW_ChWk03_PasswordGenerator/
 
 App Preview:
-![My Password Generator Screenshot](./Develop/Assets/MyPasswordGeneratorScreenShot.png "My Password Generator Screenshot")
+![My Password Generator Screenshot](./Assets/MyPasswordGeneratorScreenShot.png "My Password Generator Screenshot")
 
 ## Notes
 
