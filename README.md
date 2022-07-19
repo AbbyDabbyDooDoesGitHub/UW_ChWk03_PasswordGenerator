@@ -4,24 +4,17 @@
 Modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. 
 Run in the browser and feature dynamically updated HTML and CSS powered by JavaScript code that I write. 
 Have a clean and polished, responsive user interface that adapts to multiple screen sizes.
-
 Password can include special characters. Examples of password special characters: https://www.owasp.org/index.php/Password_special_characters
-
-Create a Web Portfolio that can be added to as Projects are Completed
-Ensure Webpage is Functioning as Intended (ie: all links work, etc)
-Create an End Product that works on Desktop and Mobile
-Apply Flexbox, Media Queries, and CSS Variables Skills
 
 ```
 Link to Web App: <!-- REPLACE W/LINK -->
 
 App Preview:
-<!-- ![My Portfolio Screenshot](./Images/MyPortfolioScreenShot.png "My Portfolio Screenshot") -->
+![My Password Generator Screenshot](./Assets/MyPasswordGeneratorScreenShot.png "My Password Generator Screenshot")
 
 ## Notes
 
-<!-- INSERT NOTES ON PROJECT  ~  I started with bare-bones html content. After establishing the elements I wanted on the page, the majority of the time was spent formatting with flexbox and adding UI perks (like mobile compatability and opacity changes when a link is hovered over). This was challenging, but rewarding to see everything comne together on my first web-app from scratch. All pictures and icons used are free-to-use. :) -->
-
+I started with the basic html and css content given, basically creating the basic look of the page. I then set into JavaScript to make the page work. I initially thought that we needed to craft a pop-up modal with the character criteria for password generation, but realized it was meant to use basic alerts and confirmations to do this. After rewriting some code, I got the alerts functioning as expected. My final step was to add validation points on character lengths to ensure that it was within the 8-128 character range requested for this application.
 
 ## User Story
 
