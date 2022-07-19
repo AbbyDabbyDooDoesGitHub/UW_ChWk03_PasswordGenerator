@@ -7,14 +7,14 @@ Have a clean and polished, responsive user interface that adapts to multiple scr
 Password can include special characters. Examples of password special characters: https://www.owasp.org/index.php/Password_special_characters
 
 ```
-Link to Web App: <!-- REPLACE W/LINK -->
+Link to Web App: https://abbydabbydoodoesgithub.github.io/UW_ChWk03_PasswordGenerator/
 
 App Preview:
-![My Password Generator Screenshot](./Assets/MyPasswordGeneratorScreenShot.png "My Password Generator Screenshot")
+![My Password Generator Screenshot](./Develop/Assets/MyPasswordGeneratorScreenShot.png "My Password Generator Screenshot")
 
 ## Notes
 
-I started with the basic html and css content given, basically creating the basic look of the page. I then set into JavaScript to make the page work. I initially thought that we needed to craft a pop-up modal with the character criteria for password generation, but realized it was meant to use basic alerts and confirmations to do this. After rewriting some code, I got the alerts functioning as expected. My final step was to add validation points on character lengths to ensure that it was within the 8-128 character range requested for this application.
+I started with the basic html and css content given, basically creating the basic look of the page. I then set into JavaScript to make the page work. I initially thought that we needed to craft a pop-up modal with the character criteria for password generation, but realized it was meant to use basic alerts and confirmations to do this. After rewriting the code, I got the alerts functioning as expected. My final step was to add validation points on character lengths to ensure that it was within the 8-128 character range requested for this application.
 
 ## User Story
 
