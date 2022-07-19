@@ -13,21 +13,20 @@ function passwordParameters() {
 
   var chars = "";  //to be actual characters to use
   
-  let text;
   let charLength = prompt("Please enter your desired password length (8-128 characters permitted):", "15");
 
   if (charLength == "") {
     alert("No password length was entered.");
-    console.log("if charLength is: " + charLength);
+    // console.log("if charLength is: " + charLength);
   } else if (charLength == null) {
     alert("User cancelled the prompt.");
-    console.log("else if charLength is: " + charLength);
+    // console.log("else if charLength is: " + charLength);
   } else if (charLength < 8) {
     alert("Minimum of 8 characters required to generate password. You requested " + charLength +".");
   } else if (charLength > 128) {
     alert("Maximum of 128 characters permitted to generate password. You requested " + charLength +".");;
   } else {
-    console.log("else charLength is: " + charLength);
+    // console.log("else charLength is: " + charLength);
 
     if (confirm("Press OK to allow lowercase characters.")) {
     } else {
@@ -50,7 +49,7 @@ function passwordParameters() {
     }
   
     var chars = lowerChars+upperChars+numericChars+specialChars;  //to be actual characters to use
-    console.log("actual characters to use: " + chars);
+    // console.log("actual characters to use: " + chars);
     
     if (chars == "" || chars == null) {
       alert("No characters were permitted. Please select at least one character type to generate a password.");
@@ -73,7 +72,7 @@ function generatePassword(passwordLength,chars) {
     password += chars.substring(randomNumber, randomNumber +1);
    }
 
-   console.log("password: " + password);
+  //  console.log("password: " + password);
    writePassword(password);
 }
 
